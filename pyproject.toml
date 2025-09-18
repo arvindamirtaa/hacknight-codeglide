@@ -1,0 +1,17 @@
+[project]
+name = "issue-triage-mcp"
+version = "0.1.0"
+description = "Issue Triage Assistant MCP Server using Weaviate"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=2.12.3",
+    "weaviate-client>=4.16.10",
+    "httpx>=0.28.1",
+    "fastapi>=0.116.2",
+    "uvicorn>=0.35.0",
+    "requests>=2.32.5",
+]
+
+[project.scripts]
+issue-triage-server = "issue_triage_server:main"
